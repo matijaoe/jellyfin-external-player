@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Jellyfin → Open in External Player
 // @namespace    https://github.com/matijaoe/jellyfin-external-player
-// @version      1.0.0
+// @version      1.0.1
 // @description  Adds a button to Jellyfin item detail pages that opens the stream in a native desktop player
 // @author       matijao
 // @license      MIT
@@ -113,6 +113,12 @@
 		const iconEl = btn.querySelector('.material-icons')
 		if (iconEl)
 			iconEl.className = `material-icons detailButton-icon ${PLAYER.icon}`
+
+		btn.addEventListener('click', (e) => {
+			e.preventDefault()
+			e.stopPropagation()
+			openInPlayer()
+		})
 
 		return btn
 	}
