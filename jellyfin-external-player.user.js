@@ -1,8 +1,14 @@
 // ==UserScript==
 // @name         Jellyfin → Open in External Player
-// @namespace    https://matijao.com
+// @namespace    https://github.com/matijaoe/jellyfin-external-player
 // @version      1.0.0
 // @description  Adds a button to Jellyfin item detail pages that opens the stream in a native desktop player
+// @author       matijao
+// @license      MIT
+// @homepageURL  https://github.com/matijaoe/jellyfin-external-player
+// @supportURL   https://github.com/matijaoe/jellyfin-external-player/issues
+// @downloadURL  https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js
+// @updateURL    https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js
 // @match        *://*/web/*
 // @run-at       document-idle
 // @grant        none

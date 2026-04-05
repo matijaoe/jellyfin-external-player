@@ -8,18 +8,22 @@ Userscript that adds a button to Jellyfin item detail pages that opens the strea
 2. Injects a button into `.mainDetailButtons`.
 3. On click: reads `ApiClient.accessToken()` and the item ID from `location.hash`, builds the download URL (`/Items/{id}/Download?api_key=…`), and hands it off to the configured player's URL scheme.
 
-The player is determined by the `PLAYERS` registry at the top of `userscript.js`. The default entry uses `iina://weblink?url={URL}`.
+The player is determined by the `PLAYERS` registry at the top of `jellyfin-external-player.user.js`. The default entry uses `iina://weblink?url={URL}`.
 
-## Install the userscript
+## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey).
-2. Create a new script, paste the contents of `userscript.js`, save.
+2. **[Click here to install the userscript](https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js)** — Tampermonkey will intercept the `.user.js` URL and show its install dialog.
+
+### Updates
+
+The script's `@downloadURL` and `@updateURL` point at the raw GitHub file. Tampermonkey auto-checks for updates (~daily) and prompts when `@version` is bumped. To pull immediately, open Tampermonkey and click "Check for updates".
 
 ## Keyboard shortcut
 
 The userscript registers a global shortcut (default **⌃⌥⌘I**) that fires the same action as the button. It only triggers on Jellyfin detail pages where the button is visible, and is suppressed when an input field is focused.
 
-Both the key combo and whether the shortcut is enabled at all are configurable in the `CONFIG.shortcut` block near the top of `userscript.js`.
+Both the key combo and whether the shortcut is enabled at all are configurable in the `CONFIG.shortcut` block near the top of `jellyfin-external-player.user.js`.
 
 ## (Optional) Auto-launch permission on macOS Chromium browsers
 
@@ -58,7 +62,7 @@ defaults delete <bundle-id> AutoLaunchProtocolsFromOrigins
 
 ## Adding another player
 
-The `PLAYERS` registry at the top of `userscript.js` maps player keys to their configuration:
+The `PLAYERS` registry at the top of `jellyfin-external-player.user.js` maps player keys to their configuration:
 
 ```javascript
 const PLAYERS = {
