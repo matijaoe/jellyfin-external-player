@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# cp config.sh.example config.sh
+
+# Protocol to auto-launch without confirmation.
+PROTOCOL="iina"
+
+# Jellyfin origins to allow auto-launch from (per-origin).
+ORIGINS=(
+  "http://jellyfin.example.com:8096"
+)
+
+# Uncomment the browsers you use (bundle ID : display name).
+BROWSERS=(
+  "com.google.Chrome:Chrome"
+  # "com.brave.Browser:Brave"
+  # "com.microsoft.Edgemac:Edge"
+  # "company.thebrowser.Browser:Arc"
+  # "company.thebrowser.dia:Dia"
+  # "net.imput.helium:Helium"
+  # "com.vivaldi.Vivaldi:Vivaldi"
+)
