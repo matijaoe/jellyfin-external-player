@@ -7,8 +7,8 @@
 // @license      MIT
 // @homepageURL  https://github.com/matijaoe/jellyfin-external-player
 // @supportURL   https://github.com/matijaoe/jellyfin-external-player/issues
-// @downloadURL  https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js
-// @updateURL    https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js
+// @downloadURL  https://raw.githubusercontent.com/matijaoe/jellyfin-external-player/master/jellyfin-external-player.user.js
+// @updateURL    https://raw.githubusercontent.com/matijaoe/jellyfin-external-player/master/jellyfin-external-player.user.js
 // @match        *://*/web/*
 // @run-at       document-idle
 // @grant        none
