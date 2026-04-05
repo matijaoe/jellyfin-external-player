@@ -10,6 +10,10 @@ Userscript that adds a button to Jellyfin item detail pages that opens the strea
 
 The player is determined by the `PLAYERS` registry at the top of `jellyfin-external-player.user.js`. The default entry uses `iina://weblink?url={URL}`.
 
+## Demo
+
+https://github.com/user-attachments/assets/7df055c1-2c01-4f1d-8781-aecf28ea6dc7
+
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey).
