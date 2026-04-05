@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Applies auto-launch policy for a custom protocol to browsers listed in config.sh.
+# Applies the auto-launch policy for the configured player's URL scheme
+# to browsers listed in config.sh.
 
 set -euo pipefail
 

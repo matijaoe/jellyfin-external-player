@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # cp config.sh.example config.sh
 
-# Protocol to auto-launch without confirmation.
+# URL scheme of the player configured in userscript.js (default: iina).
 PROTOCOL="iina"
 
 # Jellyfin origins to allow auto-launch from (per-origin).

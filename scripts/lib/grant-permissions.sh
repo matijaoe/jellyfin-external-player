@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# Set the AutoLaunchProtocolsFromOrigins policy for a custom protocol on a Chromium browser.
+# Grant auto-launch permission for an external player's URL scheme on a Chromium browser
+# via the AutoLaunchProtocolsFromOrigins enterprise policy.
+# The protocol (e.g. "iina") is driven by the userscript's configured player.
+#
 # Usage: ./grant-permissions.sh <protocol> <bundle-id> <origin1> [origin2] [...]
 
 set -euo pipefail
