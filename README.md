@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/7df055c1-2c01-4f1d-8781-aecf28ea6dc7
 ## Install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey).
-2. **[Click here to install the userscript](https://raw.githubusercontent.com/matijao/jellyfin-external-player/master/jellyfin-external-player.user.js)** — Tampermonkey will intercept the `.user.js` URL and show its install dialog.
+2. **[Click here to install the userscript](https://raw.githubusercontent.com/matijaoe/jellyfin-external-player/master/jellyfin-external-player.user.js)** — Tampermonkey will intercept the `.user.js` URL and show its install dialog.
 
 ### Updates
 
